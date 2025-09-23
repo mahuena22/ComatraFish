@@ -178,7 +178,7 @@ export default function Locations() {
                     <Button 
                       variant="outline"
                       className="flex-1 border-ocean-dark text-ocean-dark hover:bg-ocean-dark hover:text-white text-sm"
-                      onClick={() => window.open(`tel:${agency.phone}`, '_blank')}
+                      onClick={() => window.location.href = `tel:${agency.phone}`}
                       data-testid={`button-call-${agency.id}`}
                     >
                       Appeler
