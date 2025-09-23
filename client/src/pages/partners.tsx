@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Quote } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { PARTNERS } from "@/lib/constants";
 
 const TESTIMONIALS = [
@@ -51,6 +52,12 @@ const COLLABORATIONS = [
 export default function Partners() {
   return (
     <main className="min-h-screen" data-testid="page-partners">
+      <Helmet>
+        <title>Partenaires & Références - COMATRA FISH MARINE | Collaborations</title>
+        <meta name="description" content="Nos partenariats avec universités et instituts de recherche: Montpellier, IRD, INRA. Témoignages et collaborations scientifiques en aquaculture." />
+        <meta property="og:title" content="Partenaires & Références - COMATRA FISH MARINE" />
+        <meta property="og:description" content="Collaborations avec les institutions de recherche et partenaires industriels de premier plan" />
+      </Helmet>
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-r from-ocean-very-dark to-ocean-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

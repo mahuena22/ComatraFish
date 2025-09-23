@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Check } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { COMPANY_INFO } from "@/lib/constants";
 
 export default function About() {
@@ -29,6 +30,12 @@ export default function About() {
 
   return (
     <main className="min-h-screen" data-testid="page-about">
+      <Helmet>
+        <title>À propos - COMATRA FISH MARINE | Histoire & Expertise</title>
+        <meta name="description" content="Découvrez l'histoire de COMATRA FISH MARINE, fondée en 2013 par Mr Roméo David. Expert en pêche durable et aquaculture innovante en Afrique de l'Ouest." />
+        <meta property="og:title" content="À propos - COMATRA FISH MARINE | Histoire & Expertise" />
+        <meta property="og:description" content="Découvrez l'histoire de COMATRA FISH MARINE, fondée en 2013 par Mr Roméo David. Expert en pêche durable et aquaculture innovante en Afrique de l'Ouest." />
+      </Helmet>
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-r from-ocean-very-dark to-ocean-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

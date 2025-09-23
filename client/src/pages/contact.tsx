@@ -13,6 +13,7 @@ import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 import { COMPANY_INFO } from "@/lib/constants";
 
 const contactFormSchema = z.object({
@@ -67,6 +68,12 @@ export default function Contact() {
 
   return (
     <main className="min-h-screen" data-testid="page-contact">
+      <Helmet>
+        <title>Contact - COMATRA FISH MARINE | Demande de Devis</title>
+        <meta name="description" content="Contactez COMATRA FISH MARINE pour un devis personnalisé. Formulaire de contact, coordonnées des agences, horaires et réseaux sociaux." />
+        <meta property="og:title" content="Contact - COMATRA FISH MARINE" />
+        <meta property="og:description" content="Demandez un devis ou obtenez plus d'informations sur nos services" />
+      </Helmet>
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-r from-ocean-very-dark to-ocean-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

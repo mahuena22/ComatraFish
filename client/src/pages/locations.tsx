@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Helmet } from "react-helmet-async";
 import GoogleMap from "@/components/ui/google-map";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { AGENCIES } from "@/lib/constants";
@@ -21,6 +22,12 @@ export default function Locations() {
 
   return (
     <main className="min-h-screen" data-testid="page-locations">
+      <Helmet>
+        <title>Nos Agences - COMATRA FISH MARINE | Cotonou, Abidjan, Lomé</title>
+        <meta name="description" content="Trouvez nos agences COMATRA FISH MARINE: Cotonou (Bénin), Abidjan (Côte d'Ivoire), Lomé (Togo). Contacts, horaires et services dans chaque pays." />
+        <meta property="og:title" content="Nos Agences - COMATRA FISH MARINE" />
+        <meta property="og:description" content="Présence stratégique dans trois pays pour vous servir au mieux" />
+      </Helmet>
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-r from-ocean-very-dark to-ocean-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Helmet } from "react-helmet-async";
 import { 
   Dialog,
   DialogContent,
@@ -99,6 +100,12 @@ export default function Products() {
 
   return (
     <main className="min-h-screen" data-testid="page-products">
+      <Helmet>
+        <title>Produits & Services - COMATRA FISH MARINE | Catalogue Aquacole</title>
+        <meta name="description" content="Découvrez nos produits aquatiques de qualité: poissons nobles, crustacés, coquillages. Services de logistique, conditionnement et conseils techniques." />
+        <meta property="og:title" content="Produits & Services - COMATRA FISH MARINE" />
+        <meta property="og:description" content="Qualité supérieure et traçabilité complète pour tous nos produits aquatiques" />
+      </Helmet>
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-r from-ocean-very-dark to-ocean-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
