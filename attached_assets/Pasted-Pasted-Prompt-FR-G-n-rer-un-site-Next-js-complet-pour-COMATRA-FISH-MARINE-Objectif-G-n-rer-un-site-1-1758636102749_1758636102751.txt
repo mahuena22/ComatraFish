@@ -1,0 +1,143 @@
+Pasted-Prompt-FR-G-n-rer-un-site-Next-js-complet-pour-COMATRA-FISH-MARINE-Objectif-G-n-rer-un-site-1758626547985_1758626547988.txt
+Prompt (FR) — Générer un site Next.js complet pour COMATRA FISH MARINE
+
+Objectif : Générer un site web professionnel, responsive, accessible et prêt à déployer (Next.js) pour COMATRA FISH MARINE. Respecter exactement la palette de couleurs “Ocean” fournie, utiliser Montserrat pour les titres et Roboto pour le corps du texte, employer la bibliothèque react-icons pour les icônes et intégrer Google Maps pour les agences.
+
+Palette de couleurs (utiliser ces hex)
+
+#01356d (bleu très foncé) — couleur principale (headings / footer)
+
+#016ca5 (bleu foncé) — accents / boutons secondaires
+
+#0396c7 (bleu moyen) — boutons primaires / liens
+
+#04bbdf (bleu clair vif) — hover / highlights
+
+#90e0ef (bleu pastel) — fonds de sections / cartes
+
+#beedf4 (très clair) — arrière-plans et surfaces
+
+
+Polices
+
+Titres : Montserrat (var. 600–800)
+
+Texte corps : Roboto (var. 400–500) → Charger via Google Fonts dans _document ou next/head.
+
+
+Framework / techno
+
+Next.js (app dir ou pages selon préférence — générer en app/ si possible)
+
+CSS : Tailwind CSS (configurer la palette ci-dessus dans tailwind.config.js) ou CSS Modules si l’utilisateur préfère.
+
+Icônes : react-icons (ex : FiPhone, FiMapPin, FiMail, FaFacebook, FaInstagram, FaTwitter)
+
+Intégration Google Maps interactive pour la page Agences.
+
+Formulaire contact : backendless (Next.js API route) qui envoie email via SMTP (expliquer dans README comment configurer).
+
+SEO : meta tags, Open Graph, Twitter Card, sitemap.xml et robots.txt.
+
+Accessibilité : aria labels, focus states visibles, textes alternatifs pour images.
+
+
+
+---
+
+Structure du site (pages principales + contenu à remplir)
+
+1) Page d’accueil (/)
+
+Hero :
+
+Slogan (grand) : « Qualité, durabilité et innovation pour une alimentation halieutique saine. »
+
+Sous-texte court : COMATRA FISH MARINE — pêche durable, aquaculture innovante et distribution en Côte d’Ivoire, Bénin, Togo.
+
+Image forte : composition — photos de poissons nobles, cages en mer, élevage à terre. (utiliser images stock haute qualité) — inclure alt explicite.
+
+CTA principaux : Demander un devis (primary — #0396c7), Nous contacter (secondary — #016ca5).
+
+
+Présentation rapide (bloc) :
+COMATRA FISH MARINE, acteur clé de la pêche durable, aquaculture innovante et distribution de produits aquatiques en Côte d’Ivoire, Bénin, Togo.
+
+Mise en avant des agences (mini-carte + liens) : Cotonou, Abidjan, Lomé (afficher icône map + bouton « Voir agence »).
+
+Produits phares (grille 3 colonnes desktop → responsive) : Poissons nobles (tilapia, silures, poissons marins), coquillages, crustacés. Chaque carte : image + nom + courte description + bouton « En savoir plus ».
+
+Bandeau « Chiffres clés » : +10 ans d’expérience, Présence dans 3 pays, X projets en aquaculture (compteurs animés).
+
+Footer court : contacts, liens rapides, réseaux sociaux.
+
+
+2) À propos (/about)
+
+Histoire : Création en 2013 par Mr Roméo David, expert en pêche durable et aquaculture.
+
+Vision : Assurer une alimentation de qualité via des produits halieutiques issus d’une pêche responsable et aquaculture durable.
+
+Pourquoi choisir CFM : bullet points (expertise pêche industrielle responsable, réseau d’armateurs fiables, techniques RAS — recirculation bio sécurisée).
+
+Chiffres clés détaillés : timeline 2013 → aujourd’hui, projets en cours, collaborations scientifiques.
+
+CTA : « Rejoignez nos partenaires » ou « Demander un rendez-vous ».
+
+
+3) Produits & Services (/products ou /services)
+
+Listes de produits (fiches) :
+
+Poissons nobles : maigre, daurade, carangue, tilapia, silures — descriptions, tailles disponibles, conditionnement.
+
+Crustacés : gambas, langouste — descriptions, saisonnalité.
+
+Coquillages.
+
+Autres : aliment pour poissons, équipements (aerateurs, pompes, systèmes RAS).
+
+
+Services : logistique, conditionnement, livraison sous température contrôlée (cold chain), conseils techniques.
+
+Galerie miniature liée à chaque produit (carousel).
+
+CTA par fiche : Demander un devis produit (ouvre modal / formulaire pré-rempli).
+
+
+4) Nos agences (/locations)
+
+Liste détaillée : Cotonou, Abidjan, Lomé — pour chaque agence :
+
+Adresse complète
+
+Téléphone (+ WhatsApp)
+
+Email
+
+Horaires
+
+Photo de l’agence
+
+Boutons : Itinéraire (ouvre Google Maps), Appeler, Contacter
+
+
+Carte Google Maps interactive (embarquer markers pour les 3 adresses).
+
+Option : bouton « Toutes les agences » + filtre par pays.
+
+
+5) Partenaires & Références (/partners)
+
+Logos en grille : universités CI / Bénin / Togo, Université de Montpellier, IRD Montpellier, INRA, partenaires industriels.
+
+Courtes descriptions des collaborations (ex : projet X en 2022, recherche sur RAS).
+
+Témoignages / citations de partenaires (2–3 citations réelles ou placeholders réalistes).
+
+CTA : Demander un partenariat (formulaire B2B).
+
+
+6) Actualités / Blog (/blog) — optionnel mais souhaité
+
+Liste d’articles : titres, extraits, images, catégo...
