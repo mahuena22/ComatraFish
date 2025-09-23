@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Ocean color palette */
+  --ocean-very-dark: hsl(210, 96%, 21%);
+  --ocean-dark: hsl(210, 86%, 34%);
+  --ocean-medium: hsl(199, 94%, 39%);
+  --ocean-bright: hsl(193, 95%, 44%);
+  --ocean-pastel: hsl(192, 76%, 75%);
+  --ocean-light: hsl(192, 69%, 84%);
+  
+  /* Base colors */
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(210, 25%, 8%);
+  --card: hsl(192, 69%, 97%);
+  --card-foreground: hsl(210, 25%, 8%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(210, 25%, 8%);
+  --primary: hsl(199, 94%, 39%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 96%, 21%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(192, 69%, 90%);
+  --muted-foreground: hsl(210, 25%, 45%);
+  --accent: hsl(192, 76%, 92%);
+  --accent-foreground: hsl(199, 94%, 39%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(192, 30%, 91%);
+  --input: hsl(192, 23%, 97%);
+  --ring: hsl(199, 94%, 39%);
+  
+  /* Fonts */
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-sans: 'Roboto', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: hsl(210, 96%, 5%);
+  --foreground: hsl(192, 7%, 91%);
+  --card: hsl(210, 30%, 10%);
+  --card-foreground: hsl(0, 0%, 85%);
+  --popover: hsl(210, 96%, 5%);
+  --popover-foreground: hsl(192, 7%, 91%);
+  --primary: hsl(199, 94%, 52%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 15%, 95%);
+  --secondary-foreground: hsl(210, 25%, 8%);
+  --muted: hsl(210, 30%, 9%);
+  --muted-foreground: hsl(210, 4%, 46%);
+  --accent: hsl(210, 70%, 8%);
+  --accent-foreground: hsl(199, 94%, 52%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(210, 6%, 15%);
+  --input: hsl(210, 28%, 18%);
+  --ring: hsl(199, 94%, 39%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-roboto antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat;
+  }
+}
+
+@layer utilities {
+  .font-montserrat {
+    font-family: var(--font-montserrat);
+  }
+  
+  .font-roboto {
+    font-family: var(--font-roboto);
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(135deg, 
+      hsla(210, 96%, 21%, 0.9) 0%, 
+      hsla(210, 86%, 34%, 0.8) 50%, 
+      hsla(199, 94%, 39%, 0.7) 100%);
+  }
+  
+  .animate-counter {
+    animation: countUp 2s ease-out forwards;
+  }
+  
+  @keyframes countUp {
+    from { 
+      opacity: 0; 
+      transform: translateY(20px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+}
