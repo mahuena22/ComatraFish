@@ -15,8 +15,7 @@ export default function Hero() {
         <section
             className="relative h-screen flex items-center justify-center"
             style={{
-                backgroundImage:
-                    "url('https://www.sport-decouverte.com/magazine/wp-content/uploads/2022/02/Quel-permis-bateau-passer-pour-naviguer-en-mer.jpg.webp')",
+                backgroundImage: "url('/hero-bg.jpeg')", // Placez votre image dans client/public/hero-bg.jpg
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}

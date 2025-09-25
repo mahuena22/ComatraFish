@@ -28,8 +28,8 @@ export default function Home() {
             </Helmet>
             <Hero />
             <StatsSection />
-            <AgencyPreview />
             <FeaturedProducts />
+            <AgencyPreview />
         </main>
     )
 }
